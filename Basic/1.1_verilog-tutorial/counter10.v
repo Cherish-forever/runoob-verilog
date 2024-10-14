@@ -54,7 +54,9 @@ module testbench;
 
    initial begin
       $dumpfile("testbench.vcd");
-      $dumpvars(0, cnt10);
+      $dumpvars(0, cnt10); //  0: dump all cnt10 signal with it`s submodule signal and submodule in deep stage.
+                           //  1: only cnt10 signal without it`s submodule signal.
+                           // >1: dump cnt10 signal and it`s submodule signal but without submodule in deep stage.
    end
 
 endmodule
