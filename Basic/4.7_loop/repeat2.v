@@ -15,7 +15,7 @@ module test;
    reg clk;
    reg rstn;
    reg enable;
-   reg [3:0] buffer [7:0] ; // array len is 8, item is 4bits
+   reg [3:0] buffer [0:7] ; // array len is 8, item is 4bits
    integer   j;
 
    initial begin
